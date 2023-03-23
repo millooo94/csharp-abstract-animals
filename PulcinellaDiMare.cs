@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals
 {
-    public class PulcinellaDiMare : Animale, IVolante, INuotante
+    public class PulcinellaDiMare : Animale, IWaterBird //oppure INuotante, IVolante
     {
         public override void Verso()
         {

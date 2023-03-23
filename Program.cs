@@ -21,9 +21,9 @@ tweety.Mangia();
 FaiVolare(tweety);
 
 var pulcy = new PulcinellaDiMare();
-
-FaiVolare(pulcy);
-FaiNuotare(pulcy);
+//FaiVolare(pulcy);
+//FaiNuotare(pulcy);
+FaiVolareENuotare(pulcy);
 
 void FaiNuotare(INuotante animal)
 {
@@ -33,4 +33,10 @@ void FaiNuotare(INuotante animal)
 void FaiVolare(IVolante animal)
 {
     animal.Vola();
+}
+
+void FaiVolareENuotare(IWaterBird animal)
+{
+    animal.Vola();
+    animal.Nuota();
 }
