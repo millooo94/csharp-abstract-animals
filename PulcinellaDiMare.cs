@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace csharp_abstract_animals
 {
-    public class Aquila : Animale, IVolante
+    public class PulcinellaDiMare : Animale, IVolante, INuotante
     {
         public override void Verso()
         {
-            Console.WriteLine("Screech");
+            Console.WriteLine("Chip");
         }
         public override void Mangia()
         {
@@ -19,6 +19,10 @@ namespace csharp_abstract_animals
         public void Vola()
         {
             Console.WriteLine("Sto volando");
+        }
+        public void Nuota()
+        {
+            Console.WriteLine("Sto nuotando");
         }
     }
 }
